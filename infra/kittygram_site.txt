@@ -1,0 +1,5 @@
+IP: 51.250.111.13;
+name_taski: https://t4ski.sytes.net;
+name_kittygram: https://kittygr4m.sytes.net;
+login: yc-user;
+password: AWE#F#$1;
