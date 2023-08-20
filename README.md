@@ -79,18 +79,24 @@ sudo systemctl enable gunicorn_kittygram
 Установка и настройка Nginx:
 
 ```
-sudo apt install nginx -y; sudo systemctl start nginx; sudo cp infra_sprint1/infra/default /etc/nginx/sites-enabled/default; sudo systemctl reload nginx;
+sudo apt install nginx -y; sudo systemctl start nginx;
+sudo cp infra_sprint1/infra/default /etc/nginx/sites-enabled/default;
+sudo systemctl reload nginx;
 ```
 
 Настройка файрвола ufw
 
 ```
-sudo ufw allow 'Nginx Full'; sudo ufw allow OpenSSH; sudo ufw enable; sudo ufw status
+sudo ufw allow 'Nginx Full'; sudo ufw allow OpenSSH;
+sudo ufw enable; sudo ufw status
 ```
 
 Настройка сертификтов
 
 ```
-sudo apt install snapd; sudo snap install core; sudo snap refresh core; sudo snap install --classic certbot; sudo ln -s /snap/bin/cetbot /usr/bin/certbot; sudo certbot --nginx;
+sudo apt install snapd; sudo snap install core;
+sudo snap refresh core; sudo snap install --classic certbot;
+sudo ln -s /snap/bin/cetbot /usr/bin/certbot;
+sudo certbot --nginx;
 sudo systemctl reload nginx;
 ```
