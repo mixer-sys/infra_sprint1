@@ -53,7 +53,7 @@ python3 manage.py collectstatic
 
 ```
 sudo mkdir /var/www/kittygram;
-sudo cp -r infra_sprint1/backend/static_backend /var/www/kittygram
+sudo cp -r infra_sprint1/backend/static_backend/ /var/www/kittygram/
 ```
 
 Собрать статику фротенд-приложения:
@@ -65,7 +65,7 @@ cd infra_sprint1/frontend; npm i; npm run build
 Скопировать статику фронтенд-приложения в директорию проекта:
 
 ```
-sudo cp -r infra_sprint1/frontend/build/. /var/www/kittygram
+sudo cp -r infra_sprint1/frontend/build/. /var/www/kittygram/
 ```
 
 Создание сервиса, запуск, добавление в автозагрузку:
